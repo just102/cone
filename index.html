@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         /* 이서윤체 폰트 적용을 위한 코드 */
+      @font-face {
+        font-family: "LeeSeoyun";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      /* body태그 자체에 css 요소 부여 */
+    body {
+	font-family: "LeeSeoyun";
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	background-image: url("./background.png");
+    }
+
+    .container {
+        width: 390px;
+        background-color: #ff9d73;
+        height: 100%;
+    }
+
+    .photos {
+        margin-top: 30px;
+    }
+
+    .photo-frame {
+        background-color: white;
+        margin: 15px 20px;
+        height: 200px;
+
+        background-size: cover;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction:  column;
+        align-items: center;
+    }
+
+    .f-title {
+        font-size: 25px;
+        font-weight: 900;
+        color: white;
+    }
+
+    .f-date {
+        font-size: 15px;
+        font-weight: 500;
+        color: white;
+
+    }
+
+    #image1 {
+        background-image: url(./KakaoTalk_20230329_124917489.jpg);
+    }
+
+    #image2 {
+        background-image: url(./KakaoTalk_20230329_125004585.jpg);
+    }
+
+    #image3 {
+        background-image: url(./KakaoTalk_20230329_125031158.jpg);
+    }
+
+    #image4 {
+        background-image: url(./KakaoTalk_20230329_125112557.jpg);
+    }
+
+    .photo_description {
+        color: white;
+        background-color: hsl(0, 49%, 53%);
+
+        width: fit-content;
+        padding: 0 20px;
+        margin-bottom: 10px;
+
+        border-radius: 10px;
+    }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="photos">
+        <div id="image1" class="photo-frame">
+            <span id="desc1" class="photo_description">
+                스케이팅 타던 날
+            </span>
+        </div>
+        <div id="image2" class="photo-frame">
+            <span id="desc1" class="photo_description">
+                아트페어 간 날
+            </span>    
+        </div>
+        <div id="image3" class="photo-frame">
+            <span id="desc1" class="photo_description">
+                롯데월드 교복데이트 한 날
+            </span>   
+        </div>
+        <div id="image4" class="photo-frame">
+            <span id="desc1" class="photo_description">
+                예쁜 카페 갔던 날
+            </span>   
+        </div>
+    </div>
+    <div class="footer">
+        <p class="f-title">you and me</p>
+        <p class="f_date">2023.03.29</p>
+    </div>
+</div>
+
+</body>
+</html>
